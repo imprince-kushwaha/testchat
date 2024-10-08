@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import { User } from "../models/user.model.js"
 
 const getUserDetailsFromToken = async (token) => {
-    console.log("token",token)
+    // console.log("token",token)
     if (!token) {
         return {
             message: "Session Out",
