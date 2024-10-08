@@ -15,7 +15,6 @@ const checkPassword = async (req, res) => {
             });
         }
         const verifypassword = await bcrypt.compare(password, user.password)
-
         if (!verifypassword) {
             return res.status(400).json({
                 message: "Please check your Password",
@@ -27,7 +26,7 @@ const checkPassword = async (req, res) => {
             id: user._id,
             email: user.email
         }
-        const token = await jwt.sign(tokenData, process.env.JWT_SECRET_KEY, { expiresIn: '1d' })
+        const token = await jwt.sign(tokenData, process.env.JWT_SECRET_KEY, { expiresIn: '7d' })
 
         const cookiesOption = {
             httpOnly: true,
