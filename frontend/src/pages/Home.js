@@ -138,10 +138,13 @@ const Home = () => {
             // const response = await axios.get(URL, {
             //     withCredentials: true
             // });
-            dispatch(setUser(response.data.data));
-            if (response.data.data.logout) {
+            // dispatch(setUser(response.data.data));
+            // if (response.data.data.logout) {
+            if (response.data.logout) {
                 dispatch(logout());
                 navigate('/email');
+            }else {
+                dispatch(setUser(response.data.data));
             }
         } catch (error) {
             console.log("error", error);
