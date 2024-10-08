@@ -6,6 +6,7 @@ const ForgotPassword = () => {
     <div>
       <Header/>
       Forgot Password
+      Yaad kro password...
     </div>
   )
 }
