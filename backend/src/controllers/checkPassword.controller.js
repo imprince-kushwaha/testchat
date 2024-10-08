@@ -33,7 +33,8 @@ const checkPassword = async (req, res) => {
             httpOnly: true,
             // secure: true
             secure: process.env.NODE_ENV === 'production',
-            sameSite: 'Strict'
+            sameSite: 'Strict',
+            path: '/'
         }
         return res.cookie('token', token, cookiesOption).status(200).json({
             message: "Login Successsfully",

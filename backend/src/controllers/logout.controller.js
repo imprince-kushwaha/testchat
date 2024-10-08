@@ -4,7 +4,8 @@ const logout = async (req, res) => {
             httpOnly: true,
             // secure: true
             secure: process.env.NODE_ENV === 'production',
-            sameSite: 'Strict'
+            sameSite: 'Strict',
+            path: '/'
         }
         return res.cookie('token', "", cookiesOption).status(200).json({
             message: "Session out",
