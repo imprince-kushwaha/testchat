@@ -151,7 +151,6 @@ const Home = () => {
 
     useEffect(() => {
         fetchUserDetails();
-        // eslint-disable-next-line
     }, [dispatch, navigate]);
 
     // Use the socket to listen for events
