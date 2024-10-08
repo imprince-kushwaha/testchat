@@ -39,7 +39,7 @@ const router = createBrowserRouter([
             //     element:<ForgotPassword/>
             // },
             {
-                path: "/chat",
+                path: "chat",
                 element: <Home />
                 ,
                 children: [{
