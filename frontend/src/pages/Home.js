@@ -154,6 +154,7 @@ const Home = () => {
 
     useEffect(() => {
         fetchUserDetails();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dispatch, navigate]);
 
     // Use the socket to listen for events
