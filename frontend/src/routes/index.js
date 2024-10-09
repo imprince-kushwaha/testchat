@@ -14,10 +14,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <App />,
         children: [
-            {
-                path: "",
-                element: <FirstPage />
-            },
+            
             {
                 path: "register",
                 element: <RegisterPage />
@@ -46,6 +43,10 @@ const router = createBrowserRouter([
                     path: ":userId",
                     element: <MessagePage />
                 }]
+            },
+            {
+                path: "",
+                element: <FirstPage />
             }
         ]
     }
