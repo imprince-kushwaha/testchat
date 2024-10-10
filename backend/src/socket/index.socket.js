@@ -32,10 +32,10 @@ io.on('connection', async (socket) => {
     console.log("User connected:", socket.id)
 
     const token = socket.handshake.auth.token
-    console.log("socket token",token)
+    // console.log("token",token)
     // current user detail
     const user = await getUserDetailsFromToken(token)
-    console.log("socket user",user)
+    // console.log("user",user)
 
     // Create a room
     socket.join(user?._id?.toString())

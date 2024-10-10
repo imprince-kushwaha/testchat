@@ -152,7 +152,7 @@ const MessagePage = () => {
     <div style={{ backgroundImage: `url(${backgroundImage})` }} className='h-[calc(100%-5rem)] bg-no-repeat bg-cover'>
       <header className='sticky top-0 h-16 bg-sky-300 flex justify-between items-center px-4'>
         <div className='flex items-center gap-4 '>
-          <Link to={"/"} className='lg:hidden'><TfiAngleLeft size={30} />
+          <Link to={"/chat"} className='lg:hidden'><TfiAngleLeft size={30} />
           </Link>
           <div>
             <ProfileInfo width={50} height={50} imageUrl={dataUser?.profile_pic} name={dataUser?.name} userId={dataUser?._id} />

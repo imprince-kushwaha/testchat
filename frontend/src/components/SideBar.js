@@ -93,7 +93,7 @@ const SideBar = () => {
                     {
                         alluser.map((conv, index) => {
                             return (
-                                <NavLink to={"/" + conv?.userDetails?._id} key={conv?._id} className='flex items-center gap-2 px-4 py-3 border border-transparent hover:border-cyan-400 rounded-lg mx-2 my-1 hover:bg-slate-100 cursor-pointer'>
+                                <NavLink to={"/chat/" + conv?.userDetails?._id} key={conv?._id} className='flex items-center gap-2 px-4 py-3 border border-transparent hover:border-cyan-400 rounded-lg mx-2 my-1 hover:bg-slate-100 cursor-pointer'>
                                     <div>
                                         <ProfileInfo imageUrl={conv?.userDetails?.profile_pic} name={conv?.userDetails?.name} width={50} height={50} />
                                     </div>
